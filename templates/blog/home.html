@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>python 3.7</title>
+</head>
+<body>
+
+    <ul>
+        {% for item in list %}
+        <li><a href="/template/id/{{ item.id }}">{{ item }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <a href="/template2/add/">Add</a>
+    <br>
+    <a href="/template/create/">Create</a>
+</body>
+</html>

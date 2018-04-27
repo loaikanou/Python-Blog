@@ -1,0 +1,10 @@
+<h1>{{ object }}</h1>
+<form action="" method="post">
+
+    {% csrf_token %}
+
+    <input type="text" name="author" placeholder="author" value="{{ object.author }}"><br>
+    <input type="text" name="title" placeholder="title" value="{{ object.title }}"><br>
+    <textarea name="post" id="" cols="30" rows="10" placeholder="post">{{ object.post }}</textarea><br>
+    <input type="submit" value="update!">
+</form>
